@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-export default function Home() {
+const ErrorPage = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <h1>Error Page</h1>
     </Layout>
   )
 }
+
+export default ErrorPage
