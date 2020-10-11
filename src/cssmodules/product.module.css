@@ -1,0 +1,29 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.products {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

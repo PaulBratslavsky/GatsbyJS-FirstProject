@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Header from "../examples/Header"
 import HeaderStatic from "../examples/HeaderStatic"
-import Images from "../components/Images"
+import ImagesExample from "../components/ImagesExample"
 
 const Examples = ({data}) => {
   console.log(data, "from example page")
@@ -22,7 +22,7 @@ const Examples = ({data}) => {
       <div>desription: {description}</div>
       <div>author: {author}</div>
       <pre>{JSON.stringify(data, null, 4)}</pre>
-      <Images />
+      <ImagesExample />
     </Layout>
   )
 }

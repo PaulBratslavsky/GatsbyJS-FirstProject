@@ -1,15 +1,16 @@
 import React from "react"
 import Navbar from "../Navbar"
 import Footer from "../Footer"
-import styles from "./layout.module.css"
+import LayoutStyled from './style';
+import "../../cssmodules/global.css";
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.background}>
+    <LayoutStyled>
      <Navbar/>
       <main>{children}</main>
       <Footer/>
-    </div>
+    </LayoutStyled>
   )
 }
 
